@@ -48,7 +48,7 @@ export default function Container({id, username, text, date}) {
     id: post.id,
     username: post.username,
     text: post.text,
-    data: getDate(post.date),
+    date: getDate(post.date),
 
     reply: post.reply.reverse().map(({id, username, text, date}) => ({
         id,
@@ -81,7 +81,7 @@ export default function Container({id, username, text, date}) {
         >
             <PostContent 
             username={data.username}
-            data={data.date}
+            date={data.date}
             text={data.text}
             />
         </div>

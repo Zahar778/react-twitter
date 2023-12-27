@@ -44,7 +44,7 @@ router.post('/post-create', function(req, res) {
     }
 })
 
-router.get ('/post-list', function(req,res) {
+router.get('/post-list', function(req,res) {
     try{
         const list = Post.getList()
 

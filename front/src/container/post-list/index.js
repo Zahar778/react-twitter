@@ -21,7 +21,7 @@ export default function Container() {
     const getData = async () => {
         setStatus(LOAD_STATUS.PROGRESS);
         try {
-            const res = await fetch ("http://localhost:4000/post-list");
+            const res = await fetch("http://localhost:4000/post-list");
             const data = await res.json();
 
             if(res.ok) {
